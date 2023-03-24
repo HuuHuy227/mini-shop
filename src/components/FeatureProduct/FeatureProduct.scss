@@ -1,0 +1,72 @@
+.featureProduct {
+    margin: 30px 200px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 28px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 50px,
+
+    }
+    .moreBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        button {
+            position: relative;
+            padding: 10px 0px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid #000;
+            background-color: #ffff;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: .2s transform ease-in-out;
+            will-change: transform;
+
+            &::after {
+                background-color: #000;
+                border-radius: 5px;
+                content: '';
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translate(-100%, 0) rotate(10deg);
+                transform-origin: top left;
+                transition: .2s transform ease-out;
+                will-change: transform;
+                z-index: -1;
+            }
+    
+            &:hover::after {
+                transform: translate(0, 0)
+            }
+    
+    
+            &:hover {
+                border: 2px solid transparent;
+                color: #ffff;
+                transform: scale(1.05);
+                will-change: transform;
+            }
+            a {
+                padding: 10px 50px;
+            }
+        }
+
+
+    }
+}

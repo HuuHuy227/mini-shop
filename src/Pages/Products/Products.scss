@@ -1,0 +1,29 @@
+.products {
+    width: 90%;
+    margin: 20px auto;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        align-items: center;
+        color: #827C92;
+
+        .head {
+            text-transform: uppercase;
+        }
+        .filterItem{
+            span {
+                margin-right: 15px;
+                
+            }
+
+            // .selector {
+            //     border: 1px solid #d9d9d9;
+            //     width: 18rem;
+            //     margin-left: 10px;
+            //     padding: 9px 5px;
+            //     border-radius: 5px;
+            // }
+        }
+    }
+}

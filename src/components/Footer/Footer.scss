@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    padding: 20px 0;
+    border-top: 1px solid #3333;
+
+    .section1 {
+        flex: 1;
+        margin-top: 50px;
+        .about {
+            margin-left: 20px;
+            width: 50%;
+            h1{
+                font-size: 20px;
+                font-weight: 600;
+              }
+
+            .img-res {
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .section2 {
+        flex: 1;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: justify;
+            span {
+                cursor: pointer;
+            }
+
+            h1{
+                font-size: 20px;
+                font-weight: 600;
+              }
+        }
+        .social {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+
+}
