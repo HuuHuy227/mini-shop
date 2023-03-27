@@ -1,3 +1,5 @@
+# Shopping Web using React + Strapi
+
 Shopping App with React + Strapi
 
 - Font-end: ReactJS
